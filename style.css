@@ -4,14 +4,43 @@ body {
     padding: 0;
 }
 
+.main{
+    
+}
+.upperNavBar{
+    /* background-color: rgb(171, 233, 239); */
+    display: flex;
+    padding: 0.8rem 0;
+    align-items: center;
+    
+}
+
+.upperNavBar .roopya-logo-container{
+    flex-basis: 16.5rem;
+    border-right: 1px solid #DEDEDE;
+}
+
+.upperNavBar .navbar-search-box{
+    flex-basis: 20rem;
+    padding-left: 1rem;
+}
+
+.upperNavBar .navbar-profile{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-basis: 50rem;
+}
+
+
 .dashboardMenu {
     min-height: 100vh;
     overflow: hidden;
+    width: 16.5rem;
 }
 
 .sidebar {
     height: 100vh;
-    width: 16.5rem;
     background-color: #2B378D;
     box-shadow: 2px 0px 30px rgba(196, 196, 196, 0.25);
     display: flex;
@@ -75,30 +104,3 @@ body {
     font-size: 12px;
 }
 
-
-.sidebar li .tooltip{
-  position: absolute;
-  top: -20px;
-  left: calc(100% + 15px);
-  z-index: 3;
-  background: #fff;
-  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
-  padding: 6px 12px;
-  border-radius: 4px;
-  font-size: 15px;
-  font-weight: 400;
-  opacity: 0;
-  white-space: nowrap;
-  pointer-events: none;
-  transition: 0s;
-}
-.sidebar li:hover .tooltip{
-  opacity: 1;
-  pointer-events: auto;
-  transition: all 0.4s ease;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.sidebar.open li .tooltip{
-  display: none;
-}
